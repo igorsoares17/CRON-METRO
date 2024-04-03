@@ -1,0 +1,686 @@
+@media screen and (min-width: 1000px) {
+
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 100%;
+    }
+
+    body{
+        background-color: hsl(180, 11%, 64%);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #title{
+        margin-top: 1%;
+        margin-left: 1%;    
+        width: 50%;
+        border-radius: 20px;
+        font-size: 2vw;
+        text-align: center;
+
+    }
+
+    #buttons{
+    
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        gap: 4%;
+    }
+
+    .btn{
+        margin-top: 2%;
+        background-color: rgb(74, 74, 150);
+        border-radius: 20px;
+        width: 20%;
+        padding: 2%;
+        color: #fff;
+        font-size: 1vw;
+        
+    }
+
+    #timer{
+        padding-left: 0.3%;
+        padding-right: 0.5%;
+    }
+
+    #init:hover, #chronometer:hover, #timer:hover{
+        background-color: rgb(43, 43, 152);
+        border: 3px solid #fff;
+    }
+
+    main{
+        margin-top: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #section1{
+
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxhour{
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #cxhour1{
+        font-size: 5vw;
+        width: 60%;
+        margin-left: 20%;
+        background-color: #fff;
+        text-align: center;
+
+    }
+
+    #cxsep{
+        margin-left: 10%;
+        width: 10%;
+        text-align: center
+    }
+
+    #sep{
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #hour{
+
+        
+        text-align: center;
+
+    }
+
+    #section2{ 
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxminutes{
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #cxminutes1{
+        width: 60%;
+        margin-left: 10%;
+        text-align: center;
+        background-color: #fff;
+        font-size: 5vw;
+
+    }
+
+    #minutes{
+
+        text-align: center;
+        
+
+    }
+
+    #cxsep2{
+        margin-left: 10%;
+        width: 10%;
+        text-align: center
+    }
+
+    #sep2{
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #cxbutton{
+        margin-top: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #init{
+        margin-left: 25%;
+        background-color: rgb(74, 74, 150);
+        color: #fff;
+        width: 33%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 1.5vw;
+        border-radius: 20px;
+
+    }
+
+
+    #reset{
+        margin-left: 5%;
+        padding: 3%;
+        border-radius: 10px;
+        background-color: hsl(180, 11%, 64%);
+        color: hsl(180, 11%, 64%);
+    }
+
+    #valid{
+        width: 60%;
+        margin-left: 15%;
+        font-size: 1.2vw;
+        margin-top: 5%;
+        color: red
+    }
+
+    #section3{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxsec{
+        background-color: red;
+        width: 60%;
+        margin-top: 20%;
+        background-color: #fff;
+        text-align: center;
+        font-size: 5vw;
+
+    }
+
+    #sec{
+        text-align: center;
+
+    }
+
+
+   
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 100%;
+    }
+
+    body{
+        background-color: hsl(180, 11%, 64%);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+
+    }
+
+    header{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #title{
+        
+        margin-top: 1%;
+        margin-left: 1%;
+        width: 40%;
+        border-radius: 20px;
+        font-size: 5vw;
+        text-align: center;
+        padding-top: 1.5%;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+
+    #select{
+        margin-top: 2%;
+        font-size: 3vw;
+    }
+
+    #buttons{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        margin-top: 2%;
+    }
+
+    .btn{
+        background-color: rgb(74, 74, 150);
+        color: #fff;
+        width: 79%;
+        font-size: 4vw;
+        margin-top: 5%; 
+        border-radius: 20px;
+        padding: 6%;
+
+
+    }
+
+    #init:hover, #chronometer:hover, #timer:hover{
+        background-color: rgb(43, 43, 152);
+        border: 3px solid #fff;
+    }
+
+    main{
+        margin-top: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #section1{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxhour{
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #cxhour1{
+        font-size: 10vw;
+        width: 60%;
+        margin-left: 20%;
+        background-color: #fff;
+        text-align: center;
+
+    }
+
+    #cxsep{
+        margin-left: 10%;
+        width: 10%;
+        text-align: center
+    }
+
+    #sep{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #hour{
+
+        
+        text-align: center;
+
+    }
+
+    #section2{ 
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxminutes{
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #cxminutes1{
+        width: 60%;
+        margin-left: 10%;
+        text-align: center;
+        background-color: #fff;
+        font-size: 10vw;
+
+    }
+
+    #minutes{
+
+        text-align: center;
+        
+
+    }
+
+    #cxsep2{
+        margin-left: 10%;
+        width: 10%;
+        text-align: center
+    }
+
+    #sep2{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #cxbutton{
+        margin-top: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    #init{
+        background-color: rgb(74, 74, 150);
+        color: #fff;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 20px;
+        font-size: 4vw;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        padding-left: 30%;
+        padding-right: 30%;
+
+    }
+
+
+    #reset{
+        margin-left: 5%;
+        padding: 3%;
+        border-radius: 10px;
+        background-color: hsl(180, 11%, 64%);
+        color: hsl(180, 11%, 64%);
+        font-size: 4vw;
+    }
+
+    #valid{
+        text-align: center;
+        width: 60%;
+        margin-left: 15%;
+        font-size: 3vw;
+        margin-top: 15%;
+        color: red
+    }
+
+    #section3{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxsec{
+        background-color: red;
+        width: 60%;
+        margin-top: 20%;
+        background-color: #fff;
+        text-align: center;
+        font-size: 10vw;
+
+    }
+
+    #sec{
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 100%;
+    }
+
+    body{
+        background-color: hsl(180, 11%, 64%);
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+
+    }
+
+    header{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #title{
+        
+        margin-top: 1%;
+        margin-left: 1%;
+        width: 40%;
+        border-radius: 20px;
+        font-size: 5vw;
+        text-align: center;
+        padding-top: 1.5%;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+
+    #select{
+        margin-top: 2%;
+        font-size: 3vw;
+    }
+
+    #buttons{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        margin-top: 2%;
+    }
+
+    .btn{
+        background-color: rgb(74, 74, 150);
+        color: #fff;
+        width: 79%;
+        font-size: 4vw;
+        margin-top: 5%; 
+        border-radius: 20px;
+        padding: 6%;
+
+
+    }
+
+    #init:hover, #chronometer:hover, #timer:hover{
+        background-color: rgb(43, 43, 152);
+        border: 3px solid #fff;
+    }
+
+    main{
+        margin-top: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #section1{
+
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxhour{
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #cxhour1{
+        font-size: 16vw;
+        width: 60%;
+        margin-left: 20%;
+        background-color: #fff;
+        text-align: center;
+
+    }
+
+    #cxsep{
+        margin-left: 10%;
+        width: 10%;
+        text-align: center
+    }
+
+    #sep{
+        font-size: 16vw;
+        text-align: center;
+    }
+
+    #hour{
+
+        
+        text-align: center;
+
+    }
+
+    #section2{ 
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxminutes{
+       
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #cxminutes1{
+      
+        width: 60%;
+        margin-left: 10%;
+        text-align: center;
+        background-color: #fff;
+        font-size: 16vw;
+
+    }
+
+    #minutes{
+
+        text-align: center;
+        
+
+    }
+
+    #cxsep2{
+        margin-left: 10%;
+        width: 10%;
+        text-align: center
+    }
+
+    #sep2{
+        font-size: 16vw;
+        text-align: center;
+    }
+
+    #cxbutton{
+
+        margin-top: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #init{
+        background-color: rgb(74, 74, 150);
+        color: #fff;
+        padding-bottom: 5%;
+        font-size: 5vw;
+        border-radius: 20px;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+
+
+    #reset{
+        margin-top: 10%;
+        padding: 3%;
+        font-size: 7vw;
+        border-radius: 10px;
+        background-color: hsl(180, 11%, 64%);
+        color: hsl(180, 11%, 64%);
+        cursor: pointer;
+    }
+
+    #valid{
+        text-align: center;
+        width: 100%;
+        margin-left: 2%;
+        font-size: 5vw;
+        margin-top: 20%;
+        color: red;
+    }
+
+    #section3{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #cxsec{
+     
+        width: 60%;
+        margin-top: 20%;
+        background-color: #fff;
+        text-align: center;
+        font-size: 16vw;
+
+    }
+
+    #sec{
+        text-align: center;
+
+    }
+
+}
+
+
+  
