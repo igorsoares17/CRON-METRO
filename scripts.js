@@ -42,7 +42,7 @@ class Controller {
 
     addClickEvents(element, fn){
 
-        let events = "click drag";
+        let events = "click touchstart";
 
         events.split(' ').forEach(event => {
 
@@ -52,7 +52,7 @@ class Controller {
 
     addMouseEvents(element) {
 
-        let events = "mouseup mousedown mouseover";
+        let events = "mouseup mousedown mouseover touchstart";
 
         events.split(' ').forEach(event => {
 
