@@ -11,8 +11,6 @@ class Controller {
         this._initEl = document.getElementById("init");
         this._contInit = "nothing";
 
-        this._resetEl = document.getElementById("reset");
-
         this._validEl = document.getElementById("valid");
 
         this._secondsEl = document.getElementById("sec");
@@ -42,7 +40,7 @@ class Controller {
 
     addClickEvents(element, fn){
 
-        let events = "click touchstart";
+        let events = "click drag";
 
         events.split(' ').forEach(event => {
 
@@ -52,7 +50,7 @@ class Controller {
 
     addMouseEvents(element) {
 
-        let events = "mouseup mousedown mouseover touchstart";
+        let events = "mouseup mousedown mouseover";
 
         events.split(' ').forEach(event => {
 
@@ -81,7 +79,6 @@ class Controller {
         this.chronometerEvents();
         this.timerEvents();
         this.initEvents();
-        this.resetEvents();
         this.cxSecEvents();
         this.cxMinEvents();
         this.cxHourEvents();
@@ -124,39 +121,7 @@ class Controller {
         })
     }
 
-    resetEvents() {
-
-        this.addClickEvents(this._resetEl, events => {
-
-            if (this._cont == 1) {
-
-                if (this._contInit == "running") {
-
-                    this._hour = 0;
-                    this._hourEl.innerHTML = "00";
-                    this._minutes = 0;
-                    this._minutesEl.innerHTML = "00";
-                    this._seconds = 0;
-                    this._secondsEl.innerHTML = "00";
-                }
-
-                else if (this._contInit == "stop") {
-
-                    this.activeCh();
-                }
-            }
-
-            if (this._cont2 == 1) {
-
-                this.activeTimer();         
-            }
-        })
-    }
-
     start() {
-
-        this.activeBtnReset(); 
-        
 
         this._myInterval = setInterval(() => {
 
@@ -325,15 +290,10 @@ class Controller {
             else if (this._cont2 == 1) {
 
                 this.setItemColorNotSelected(this._timerButtonEl);
-                this.setItemColorSelected(this._timerButtonEl);
+                this.setItemColorSelected(this._chronometerButtonEl);
                 this.activeCh();
             }      
         })
-    }
-
-    activeBtnReset(){
-
-        this.addMouseEvents(this._resetEl);    
     }
 
     stop() {
@@ -406,7 +366,6 @@ class Controller {
                 this._secondsEl.contentEditable = "false";
 
                 this.running();
-                this.activeBtnReset();
 
                 this._seconds = parseInt(this._seconds);
                 this._hour = parseInt(this._hour);
@@ -469,7 +428,6 @@ class Controller {
                     if (this._hour == 0 && this._minutes == 0 && this._seconds == 0) {
     
                         clearInterval(this._mySecInterval);
-                        this.resetEvents();
                         
                         window.alert("TEMPO ESGOTADO!!");
     
@@ -500,13 +458,9 @@ class Controller {
 
         this.resetCounter();
 
-        this._resetEl.cursor = "initial";
-
         this._hourEl.contentEditable = "false";
         this._minutesEl.contentEditable = "false";
         this._secondsEl.contentEditable = "false";
-
-        this.removeCursor(this._resetEl);
     }
 
     activeCh(){
@@ -523,9 +477,7 @@ class Controller {
 
         this._hourEl.contentEditable = "false";
         this._minutesEl.contentEditable = "false";
-        this._secondsEl.contentEditable = "false";
-
-        this.removeCursor(this._resetEl);      
+        this._secondsEl.contentEditable = "false";    
     }
 
 
@@ -535,11 +487,9 @@ class Controller {
         this._minutesEl.contentEditable = "true";
         this._secondsEl.contentEditable = "true";
 
-        this.resetCounter()
+        this.resetCounter();
 
-        this._cont2 = 1   
-
-        this.removeCursor(this._resetEl); 
+        this._cont2 = 1   ;
 
         this._initEl.innerHTML = "INICIAR";
         this._contInit = "selected";
